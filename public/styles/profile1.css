@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(247, 246, 252);
+  color: rgb(70, 71, 81);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ---------- MAIN ---------- */
+
+.main-container {
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.details-card-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details-card-content-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-child1,
+.info-child2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.info-child2 {
+  border: 2px solid gray;
+  color: black;
+}
+
+.details-buckets {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.bucketRow1,
+.bucketRow2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bucket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  width: 100%;
+  background-color: #1e6bd6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.print {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.print-button {
+  border: 2px solid #04aa6d;
+  background-color: white;
+  width: 100px;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.print-button:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .details-card {
+    flex-direction: row;
+  }
+
+  .details-card-content-info {
+    flex-direction: row;
+  }
+
+  .info-child1,
+  .info-child2 {
+    width: 50%;
+  }
+
+  .details-buckets {
+    flex-direction: row;
+  }
+
+  .bucket {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+  }
+}
